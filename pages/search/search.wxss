@@ -1,0 +1,60 @@
+/* miniprogram/pages/search/search.wxss */
+@import '../../style/iconfont.wxss';
+.serach{
+  padding: 20rpx
+}
+/* .icon-sousuo{
+} */
+
+.weui-input{
+  margin-bottom: 20rpx;
+  border-radius: 30rpx;
+  height: 70rpx;
+  background-image:linear-gradient(to right,#CFD8DC,#ECEFF1) ;
+  display: flex;
+  align-items: center;
+  padding:0 20rpx
+}
+.card-contens{
+  margin-top:20rpx
+}
+.card-content{
+  display: flex;
+  align-items: center;
+ margin-bottom: 20rpx
+}
+.card-img{
+  width: 120rpx;
+  height: 160rpx
+}
+.card-title-info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+.card-info{
+  margin-left: 20rpx;
+}
+
+.book-info{
+  color:#ccc;
+  font-size:20rpx;
+  padding: 10rpx;
+}
+.search-history{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx;
+  font-size: 28rpx
+}
+.history-list{
+  display: flex
+}
+.history{
+  border: solid 2rpx #ccc;
+  border-radius:20rpx;
+  padding: 5rpx 10rpx;
+  margin-right: 15rpx;
+  font-size: 26rpx;
+}

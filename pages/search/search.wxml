@@ -1,0 +1,32 @@
+<view class="serach">
+  <input class=" {{flag?'weui-input iconfont icon-sousuo':'weui-input'}}" maxlength="10" placeholder="斗罗大陆" focus="true" type="text" confirm-type="serach" bindblur="getInput" value="{{inputValue}}" />
+  <!-- 做一次判断，如果长度为0，显示搜索记录，如果不为0，则显示数据 -->
+  <block wx:if="{{category.length<1}}">
+    <view>
+      <view class="search-history">
+        <view>搜索历史</view>
+        <view style="color:#339af0" bindtap="clearHistory">清空</view>
+      </view>
+      <view class="history-list">
+        <block wx:for="{{historyList}}" wx:key="index">
+          <view class="history" bindtap="clickItem" data-item="{{item}}">{{item}}</view>
+        </block>
+
+      </view>
+    </view>
+  </block>
+  <block wx:else>
+    <view class="card-contens">
+      <view wx:for="{{category}}" wx:key="index" class="card-content">
+        <image src="{{item.imgUrl}}" class="card-img"></image>
+        <view class="card-info">
+          <view class="book-title">{{item.name}}</view>
+          <view class="book-info">{{item.author}}|{{item.grade}}</view>
+          <view class="book-info">{{item.scribe}}</view>
+        </view>
+      </view>
+    </view>
+
+  </block>
+
+</view>

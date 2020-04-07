@@ -1,0 +1,110 @@
+.bookshelf{
+ padding: 20rpx
+}
+.card{
+  border: solid 2rpx #ccc;
+  border-radius: 20rpx;
+  padding:20rpx
+}
+.card-title{
+  display: flex;
+  justify-content: space-between;
+  border-bottom:solid 2rpx #ccc;
+  padding: 40rpx 0;
+  align-items: center
+}
+.avator{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  border: solid 2rpx #ccc;
+  overflow: hidden
+}
+.book-get{
+  border-radius: 25rpx;
+  background-color: #434c5e;
+  color: #fff;
+  padding: 20rpx 10rpx;
+  text-align: center;
+  margin-top: 20rpx;
+  font-size: 25rpx
+  
+}
+.book-content{
+  margin-top: 20rpx
+}
+.book-items{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap
+}
+.book{
+  width: 200rpx;
+  height: 300rpx;
+  border: solid 2rpx #ccc;
+  margin-right:30rpx;
+  margin-bottom: 15rpx;
+  position: relative;
+
+
+}
+.book::after{
+  content: "";
+  width: 50rpx;
+  height: 7rpx;
+  background-color: #ccc;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%)
+}
+.book::before{
+  content: "";
+  width: 7rpx;
+  height: 50rpx;
+  background-color:#ccc;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%)
+
+}
+.mask{
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background:rgba(00, 00, 00, .3)
+}
+.mask-content{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 999
+
+}
+.mask-image{
+  border-radius: 20rpx;
+  width: 500rpx;
+  height: 750rpx;
+}
+.closeMask{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  color: #fff;
+  padding:20rpx;
+  background: rgba(0,0,0,.5);
+  text-align: center;
+  line-height: 80rpx;
+ font-size: 1.5em;
+ margin-top: 100rpx
+}
+

@@ -1,0 +1,41 @@
+<view class="bookshelf">
+  <!-- 卡片 -->
+  <view class="card">
+    <view class="card-title">
+    {{nicaName}}
+      <view> <open-data type="userNickName"></open-data></view>
+         <open-data class="avator" type="userAvatarUrl"></open-data>
+     
+     
+    </view>
+    <view style="font-size:25rpx;padding:20rpx 0">无限卡今日到期</view>
+    <view style="font-size:20rpx;color:#ccc">信息发送大神发多少浮动</view>
+  </view>
+  <!-- 领取福利 -->
+  <view class="book-get" bindtap="download" >去微信读书app管理书架</view>
+  <!-- 书架上面的书 -->
+  <view class="book-content">
+    <view class="book-items">
+      <view class="book" bindtap="goBookShelf"></view>
+      <view class="book"></view>
+      <view class="book"></view>
+      <view class="book"></view>
+    </view>
+  </view>
+  <!-- mask -->
+  <block wx:if="{{flag}}">
+    <view class="mask">
+    <view class="mask-content">
+    <!-- 那张图片 -->
+    <image class="mask-image" src="/images/2.png" bindtap="downloadApp"></image>
+    
+      <!-- 关闭蒙版 -->
+    <view class="closeMask" bindtap="closeApp">X</view>
+      
+    </view>
+
+    
+  </view>
+  </block>
+  
+</view>

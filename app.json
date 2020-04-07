@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/bookshelf/bookshelf",
+    "pages/read/read",
+    "pages/video/video",
+    "pages/search/search"
+    
+   
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "福利",
+        "iconPath": "./images/index.png",
+        "selectedIconPath": "./images/indexs.png"
+      },
+      {
+        "pagePath": "pages/read/read",
+        "text": "免费阅读",
+        "iconPath": "./images/read.png",
+        "selectedIconPath": "./images/reads.png"
+      },
+      {
+        "pagePath": "pages/video/video",
+        "text": "视频",
+        "iconPath": "./images/video.png",
+        "selectedIconPath": "./images/videos.png"
+      }
+    ],
+    "backgroundColor": "#EEEEEE",
+    "color": "#6F6F6F",
+    "selectedColor": "#4A53F5"
+  },
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

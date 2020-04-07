@@ -1,0 +1,27 @@
+/* miniprogram/pages/video/video.wxss */
+.video-image{
+  width: 100%;
+  height: 400rpx;
+}
+.video-author{
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+.video-share{
+  display: flex;
+  align-items: center;
+
+}
+.video-content{
+  padding: 20rpx
+}
+.share{
+  background-image: linear-gradient(to right,#03A9F4,#4FC3F7);
+  border-radius: 10rpx;
+  padding: 10rpx;
+  font-size:0.8em;
+ color: #fff
+
+
+}

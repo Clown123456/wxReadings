@@ -1,0 +1,32 @@
+<!--miniprogram/pages/read/read.wxml-->
+<!--pages/read/read.wxml-->
+<view class="read">
+  <!-- 头部的input输入框 -->
+  <input class="weui-input iconfont icon-sousuo" maxlength="10" placeholder="斗罗大陆" bindfocus="goSearch" />
+  <!-- 卡片区域 -->
+  <view class="card">
+    <view class="card-title">无限卡免费阅读，剩余1天</view>
+    <view class="card-title-info">
+      <image class="card-img" src="/images/1.jpg"></image>
+      <text style="color:#fff;font-size:25rpx" bindtap="goBookshelf">书架></text>
+    </view>
+  </view>
+  <!-- 分类区域 -->
+  <view>
+    <view class="card-tabbar">
+      <view wx:for="{{tabbarList}}" wx:key="index">
+        <view style="{{item.id===tabbarIndex ?'color:#4dabf7' : ''}}" bindtap="clicktab" id="{{item.id}}">{{item.name}}</view>
+      </view>
+    </view>
+    <view class="card-contens">
+      <view wx:for="{{category}}" wx:key="index" class="card-content">
+        <image src="{{item.imgUrl}}" class="card-img"></image>
+        <view class="card-info">
+          <view class="book-title">{{item.name}}</view>
+          <view class="book-info">{{item.author}}|{{item.grade}}</view>
+          <view class="book-info">{{item.scribe}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
